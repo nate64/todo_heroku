@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do 
-    resource :todos
+    resources :todos
 end
 
 get '*other', to: 'static#index'
