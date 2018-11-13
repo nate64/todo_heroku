@@ -12,7 +12,6 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('/api/todos')
       .then(res => {
-        debugger
         this.setState({ todos: res.data })
       })
   }
